@@ -1,0 +1,15 @@
+.card{
+    .typeAnnonce{
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width:760px){
+    .card{
+       height: auto !important;
+
+       img{
+        height: auto;
+       }
+
+    }
+}

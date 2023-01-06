@@ -1,0 +1,47 @@
+@import "../Sass/Variables";
+.container-fluid.MonCompte{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: "lateral main";
+
+
+    .lateral{
+        grid-area: lateral;
+        background-color: lighten($themeColor,55%);
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                margin: 0;
+                padding: 0 5px;
+                height: 50px;
+                margin: 2px 0;
+                display: flex;
+                align-items: center;
+                color: $themeColor;
+                transition: 0.2s;
+                cursor:pointer;
+                padding-left:5px;
+                font-size: 0.9rem;
+                z-index: 9;
+                &:hover{
+                    background-color: lighten($themeColor,20%);
+                    transition: 0.2s;
+                    color: lighten($themeColor,55%);
+                    transform: scale(1.02);
+                    box-shadow: 0px 2px 2px $themeColor;
+                }
+                span{
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    
+}

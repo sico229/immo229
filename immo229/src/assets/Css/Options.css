@@ -1,0 +1,52 @@
+.options {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/1.webp");
+  background-position: center center;
+  background-size: cover;
+}
+.options > div {
+  width: 50%;
+  background-color: #e7fbf3;
+  min-height: 300px;
+  box-shadow: 2px 2px 5px rgb(20, 105, 72);
+}
+.options > div .tete {
+  position: relative;
+  display: flex;
+  background-color: rgb(20, 105, 72);
+  text-align: center;
+}
+.options > div .tete .active {
+  background-color: #e7fbf3;
+  color: rgb(20, 105, 72);
+  transition: 0.2s;
+  transform: scale(1.01);
+  font-weight: bolder;
+}
+.options > div .tete div {
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #fff;
+  width: 25%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 760px) {
+  .options > div {
+    width: 90%;
+  }
+  .options > div .tete {
+    font-size: 0.7em;
+  }
+}
+
+/*# sourceMappingURL=Options.css.map */

@@ -1,0 +1,14 @@
+.card .typeAnnonce {
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 760px) {
+  .card {
+    height: auto !important;
+  }
+  .card img {
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=CardAnnonce.css.map */

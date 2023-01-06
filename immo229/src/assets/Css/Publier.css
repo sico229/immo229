@@ -1,0 +1,11 @@
+.container.publier {
+  min-height: 100vh;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Publier.css.map */

@@ -1,0 +1,64 @@
+.container.Detail{
+    padding: 5vh 2vw;
+    .image{
+        height:auto;
+        display: block;
+        position: relative;
+        height:250px;
+        margin: 0;
+        padding: 0;
+        
+        img{
+            width:100%;
+            height: 100%;
+        }
+    }
+    .mini{  
+        background-color: rgba(226, 213, 213, 0.445);
+        height: 100%;  
+        width:10%;   
+        position: absolute;
+        top:0;right:0;
+        display: flex;
+        flex-flow: column;
+        margin: 0;
+        padding: 0;
+
+        img{
+            display: block;
+            margin:3px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            object-fit: contain;
+        }
+        
+        p{background-color:blue}
+    }
+
+    
+}
+.shadow-sm{
+    margin:2px !important;
+    height:450px;
+    margin: 0;
+    padding: 2px;
+    overflow-y: scroll;
+    position: relative;
+
+    .typeAnnonce{
+        position: absolute;
+        top:0;
+        left:0;
+        padding:2px;
+        background-color: rgb(184, 106, 18);
+        color:#fff;
+        font-weight: 500;
+    }
+
+    img{
+        height: 120px;
+    }
+
+
+}

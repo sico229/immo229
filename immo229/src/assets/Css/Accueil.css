@@ -1,0 +1,79 @@
+.accueilContainer {
+  display: grid;
+  grid-template-columns: 10fr 2fr;
+  grid-template-areas: "main lateral";
+  min-height: 100vh;
+}
+.accueilContainer .mainContainer {
+  padding: 10px 2vw;
+  grid-area: main;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 2px;
+}
+.accueilContainer .mainContainer .card {
+  position: relative;
+  padding: 2px 1px;
+  width: 23%;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.accueilContainer .mainContainer .card:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+.accueilContainer .mainContainer .card .typeAnnonce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: orange;
+  padding: 4px 2px;
+  width: 35%;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.accueilContainer .mainContainer .card .Location {
+  background-color: rgb(20, 105, 72);
+}
+.accueilContainer .mainContainer .card .Vente {
+  background-color: rgb(26, 50, 77);
+}
+.accueilContainer .mainContainer .card img {
+  height: 150px;
+  object-fit: fill;
+}
+.accueilContainer .sideBar {
+  grid-area: lateral;
+  background-color: green;
+}
+
+@media only screen and (max-width: 720px) {
+  .accueilContainer {
+    overflow-x: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .accueilContainer .sideBar {
+    display: none;
+  }
+  .accueilContainer .mainContainer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .accueilContainer .mainContainer .card {
+    position: relative;
+    width: 90% !important;
+    margin: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=Accueil.css.map */

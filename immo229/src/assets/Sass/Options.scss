@@ -1,0 +1,60 @@
+@import "../Sass/Variables";
+.options{
+width:100%;
+margin: 0;
+padding: 0;
+min-height: 60vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url("../images/1.webp");
+background-position: center center;
+background-size: cover;
+
+&>div{
+    width:50%;
+    background-color: lighten($themeColor,70%);
+    min-height:300px;
+    box-shadow: 2px 2px 5px $themeColor;
+
+    .tete{
+        position: relative;
+        display: flex;
+        background-color: $themeColor;
+        text-align: center;
+       
+        .active{
+            background-color: lighten($themeColor,70%);
+            color: $themeColor;
+            transition: 0.2s;
+            transform: scale(1.01);
+            font-weight: bolder;
+        }
+
+        div{
+
+            height: 50px;
+            color:#fff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+             border-right:1px solid #fff;
+            width:25%;
+            justify-content: center;
+        }
+
+    }
+}
+}
+
+@media screen and (max-width:760px){
+    .options{
+        &>div{
+            width: 90%;
+
+            .tete{
+                font-size: 0.7em;
+            }
+        }
+    }
+}
